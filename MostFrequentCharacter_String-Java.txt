@@ -1,0 +1,31 @@
+
+import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+class MostFrequentCharacterString
+{
+    public static void main(String args[])
+    {
+        String str = "sudarshansudars";
+        HashMap<Character,Integer> hashmap = new HashMap<>();
+        for(char ch : str.toCharArray())
+        {
+            hashmap.put(ch,hashmap.getOrDefault(ch,0) + 1);
+        }
+        int maxcount = 0;
+        char letter = ' ';
+        for(Map.Entry<Character,Integer> entry : hashmap.entrySet())
+        {
+            if(maxcount<entry.getValue())
+            {
+                maxcount = entry.getValue();
+                letter = entry.getKey();
+            }
+        }
+        System.out.println("The Most Freq Character is");
+        System.out.println(letter);
+           System.out.println("Number of time its repeated is");
+        System.out.println(maxcount);
+        
+    }
+}
