@@ -1,0 +1,35 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class StringAnagrams
+{
+    public static void main(String args[])
+    {
+        String str = "LOVE";
+        String ptr = "EVLO";
+        if(str.length() != ptr.length())
+        {
+            System.out.println("Anagrams Logic not possible");
+            return;
+        }
+         
+        char[] a = str.toCharArray();
+        char[] b = ptr.toCharArray();
+        
+        Arrays.sort(a);
+        Arrays.sort(b);
+        
+        if(Arrays.equals(a,b))
+        {
+            System.out.println("Yes String are Anagrams");
+            return;
+        }
+        else
+        {
+            System.out.println("They are not Anagrams");
+            return;
+        }
+      
+      
+    }
+}
