@@ -1,0 +1,17 @@
+class ReverseOrderOfString
+{
+    public static void main(String args[])
+    {
+        String str = "NATWEST BANK UK";
+        String[] ptr = str.split(" ");
+        String rev = "";
+        for(int i =ptr.length-1;i>=0;i--)
+        {
+            rev = rev + ptr[i] + " ";
+        }
+        System.out.println("The Order of string which is reversed is");
+        System.out.println(rev);
+        
+      
+    }
+}
