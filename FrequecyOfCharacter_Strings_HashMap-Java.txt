@@ -1,0 +1,21 @@
+
+import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+class FrequencyOfCharacter
+{
+    public static void main(String args[])
+    {
+        String str = "NATWEST";
+        HashMap<Character,Integer> hashmap = new HashMap<>();
+        for(char ch : str.toCharArray())
+        {
+            hashmap.put(ch,hashmap.getOrDefault(ch,0) + 1);
+        }
+        System.out.println("The Occurence Count is as below");
+        System.out.println(hashmap);
+        
+           
+    }
+        
+}
