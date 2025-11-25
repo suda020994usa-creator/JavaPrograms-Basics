@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.HashSet;
+import java.util.Set;
+class DuplicatesArray {
+    public static void main(String[] args) {
+        int[] a = {2,2,5,6,7,8,9,9};
+        HashSet<Integer> hashset = new HashSet<>();
+        HashSet<Integer> vashset = new HashSet<>();
+        for(Integer inum : a)
+        {
+            if(!hashset.add(inum))
+            {
+                vashset.add(inum);
+            }
+        }
+        //System.out.println("The Duplicates are Removed");
+        System.out.println(vashset);
+        // System.out.println(hashset);
+        
+    }
+}
