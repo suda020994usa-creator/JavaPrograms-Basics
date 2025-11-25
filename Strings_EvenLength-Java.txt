@@ -1,0 +1,13 @@
+class EvenLengthStrings {
+    public static void main(String[] args) {
+        String str = "Hi how are your friends";
+        String[] ptr = str.split(" ");
+        for(String ch: ptr)
+        {
+            if(ch.length()%2==0)
+            {
+                System.out.println(ch);
+            }
+        }
+    }
+}
