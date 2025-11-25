@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+class SumofDigits {
+    public static void main(String[] args) {
+     int sum =0;
+     int n = 123456;
+     while(n!=0)
+     {
+         sum +=n%10;
+         n/=10;
+         
+     }
+     System.out.println("Sum of digits");
+     System.out.println(sum);
+      
+        
+        
+    }
+}

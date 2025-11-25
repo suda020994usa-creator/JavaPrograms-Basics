@@ -1,0 +1,25 @@
+
+import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+class StringDuplicates {
+    public static void main(String[] args) {
+      String str = "SELENIUMWEBBBBB";
+      HashSet<Character> hashset = new HashSet<>();
+      HashSet<Character> mashset = new HashSet<>();
+      for(char ch : str.toCharArray())
+      {
+          if(!hashset.add(ch))
+          {
+              mashset.add(ch);
+             
+          }
+           
+      }
+       System.out.println("The Duplciate Character are");
+       System.out.println(mashset);
+      
+        
+        
+    }
+}
