@@ -1,0 +1,25 @@
+class SeparateStringComponents {
+    public static void main(String[] args) {
+        String str = "Abc123@#D4e!";
+
+        String letters = "";
+        String digits = "";
+        String special = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (Character.isLetter(ch)) {
+                letters += ch;
+            } else if (Character.isDigit(ch)) {
+                digits += ch;
+            } else {
+                special += ch;
+            }
+        }
+
+        System.out.println("Letters: " + letters);
+        System.out.println("Digits: " + digits);
+        System.out.println("Special Characters: " + special);
+    }
+}
