@@ -1,0 +1,14 @@
+import java.util.*;
+
+class HashMapToArrayUltraEasy {
+    public static void main(String[] args) {
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+        map.put(3, "Cherry");
+
+        // Just print arrays directly
+        System.out.println(Arrays.toString(map.keySet().toArray()));
+        System.out.println(Arrays.toString(map.values().toArray()));
+    }
+}
