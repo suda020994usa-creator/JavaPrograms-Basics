@@ -1,0 +1,16 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class StringPermutations {
+    public static void main(String[] args) {
+       String str = "ALPHA";
+       int k=2;
+       String rotation = str.substring(k) + str.substring(0,k);
+       System.out.println(rotation);
+      
+     
+
+      
+        
+    }
+}
